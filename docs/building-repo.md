@@ -3,20 +3,20 @@
 <br/>
 <sup>System Setup</sup></p>   
 
-# Building the Repo from Source
+# Compiler la Repo depuis les sources
 
 Provided along with this repo are TensorRT-enabled deep learning primitives for running Googlenet/Alexnet on live camera feed for image recognition, pedestrian detection networks with localization capabilities (i.e. that provide bounding boxes), and segmentation.  This repo is intended to be built & run on the Jetson and to accept the network models from the host PC trained on the DIGITS server.
 
-The latest source can be obtained from [GitHub](http://github.com/dusty-nv/jetson-inference) and compiled onboard Jetson AGX Xavier and Jetson TX1/TX2.
+Les dernières sources peuvent être récupérées sur [GitHub](http://github.com/dusty-nv/jetson-inference) et compilé sur toute la gamme Jetson.
       
-#### Cloning the Repo
-To obtain the repository, navigate to a folder of your choosing on the Jetson.  First, make sure git and cmake are installed locally:
+#### Cloner la Repo
+To obtain the repository, navigate to a folder of your choosing on the Jetson.  D'abord, soyez sur d'avoir git et cmake d'installé localement:
 
 ``` bash
 $ sudo apt-get install git cmake
 ```
 
-Then clone the jetson-inference repo:
+Esnuite cloner la jetson-inference repo:
 ``` bash
 $ git clone https://github.com/dusty-nv/jetson-inference
 $ cd jetson-inference
@@ -45,7 +45,7 @@ $ make
 $ sudo make install
 ```
 
-Depending on architecture, the package will be built to either armhf or aarch64, with the following directory structure:
+Selon l'architecture, le package sera construit pour armhf or aarch64, avec la structure suivante:
 
 ```
 |-build
