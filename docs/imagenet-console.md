@@ -1,14 +1,14 @@
 <img src="https://github.com/dusty-nv/jetson-inference/raw/master/docs/images/deep-vision-header.jpg">
 <p align="right"><sup><a href="building-repo.md">Back</a> | <a href="imagenet-example.md">Next</a> | </sup><a href="../README.md#two-days-to-a-demo-training--inference"><sup>Contents</sup></a>
 <br/>
-<sup>Image Recognition</sup></p>  
+<sup>Reconnaissance d'Image</sup></p>  
 
-# Classifying Images with ImageNet
+# Classification d'Images avec ImageNet
 There are multiple types of deep learning networks available, including recognition, detection/localization, and soon segmentation.  The first deep learning capability we're highlighting in this tutorial is **image recognition** using an 'imageNet' that's been trained to identify similar objects.
 
-The [`imageNet`](../imageNet.h) object accepts an input image and outputs the probability for each class.  Having been trained on ImageNet database of **[1000 objects](../data/networks/ilsvrc12_synset_words.txt)**, the standard AlexNet and GoogleNet networks were automatically downloaded during the build step.  As examples of using [`imageNet`](../imageNet.h) we provide a command-line interface called [`imagenet-console`](../imagenet-console/imagenet-console.cpp) and a live camera program called [`imagenet-camera`](../imagenet-camera/imagenet-camera.cpp).
+L'objet [`imageNet`](../imageNet.h) accepte une image en entrée et donne en sortie la probabilité pour chaque classe.  Having been trained on ImageNet database of **[1000 objects](../data/networks/ilsvrc12_synset_words.txt)**, the standard AlexNet and GoogleNet networks were automatically downloaded during the build step.  As examples of using [`imageNet`](../imageNet.h) we provide a command-line interface called [`imagenet-console`](../imagenet-console/imagenet-console.cpp) and a live camera program called [`imagenet-camera`](../imagenet-camera/imagenet-camera.cpp).
 
-### Using the Console Program on Jetson
+### Utiliser la Console sur Jetson
 
 First, try using the [`imagenet-console`](../imagenet-console/imagenet-console.cpp) program to test imageNet recognition on some example images.  It loads an image, uses TensorRT and the [`imageNet`](../imageNet.h) class to perform the inference, then overlays the classification and saves the output image.
 
